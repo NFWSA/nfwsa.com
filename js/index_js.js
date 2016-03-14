@@ -11,6 +11,7 @@ window.addEventListener("load", function(){
 		}
 	});
 	taichi.addEventListener("transitionend", function(){
+		document.body.setAttribute("class", "loaded");
 		if(taichi.getAttribute("class")=="rotate"){
 			taichi.setAttribute("class", "");
 		}
@@ -23,5 +24,21 @@ window.addEventListener("load", function(){
             cancelable: true
         });
 		taichi.dispatchEvent(event);
+	});
+
+	var name = document.getElementById("nameBtn");
+	var nameArt = document.getElementById("nameArt");
+	var nameBack = document.getElementById("nameArtBack");
+	name.addEventListener("click", function(){
+		nameArt.style.visibility = "visible";
+		nameBack.style.visibility = "visible";
+	});
+	nameArt.addEventListener("click", function(){
+		nameArt.style.visibility = "hidden";
+		nameBack.style.visibility = "hidden";
+	});
+	nameBack.addEventListener("click", function(){
+		nameArt.style.visibility = "hidden";
+		nameBack.style.visibility = "hidden";
 	});
 });
