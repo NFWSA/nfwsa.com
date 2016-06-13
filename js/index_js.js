@@ -21,7 +21,7 @@ var quotes = [
 	"祸福无门，惟人自召。善恶有报，如影随形。　　——《太上感应篇》",
 ];
 
-function Star(x = Math.random()*can.width, y = -1 + Math.random()*can.height){
+function Star(x, y){
 	this.x = x;
 	this.y = y;
 	this.vx = -0.5 - Math.random()*0.5;
@@ -90,7 +90,7 @@ window.addEventListener("load", function(){
 	can = document.getElementById("bgsvg");
 	ctx = can.getContext('2d');
 	for(var i=0; i<n; ++i){
-		stars.push(new Star());
+		stars.push(new Star(Math.random()*can.width, -1 + Math.random()*can.height));
 	}
 
 	window.addEventListener('click', function(e){
