@@ -41,17 +41,17 @@ body{
 }
 
 header{
-	visibility: hidden;
 	transform: translateX(-0.4em) translateY(2em);
 	position: absolute;
 	left: 5vw;
 	top: 10vh;
+    opacity: 0;
 	font-size: 2em;
 }
 body.loaded header{
-	visibility: visible;
 	transform: translateX(0) translateY(0);
 	transition: 1s ease;
+    opacity: 1;
 }
 
 nav a{
