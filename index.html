@@ -8,18 +8,19 @@
 	<meta name="generator" content="Kate - Advanced Text Editor">
 	<meta name="description" content="SurgeNight's homepage">
 	<meta name="robots" content="index,follow">
+	<meta name=viewport content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="css/index_css.css" type="text/css">
-	<script type="text/javascript" src="js/index_js.js"></script>
 </head>
 
 <body>
+
 	<header>
 		<h1><ruby>Surge<rt>涌动</rt>Night<rt>之夜</rt>的<rt>'s</rt>狗窝<rt>homepage</ruby></h1>
 		<nav>
-			<a id="nameBtn"><ruby>昵称<rt>SB ？</ruby></a>
+			<a id="nameBtn"><ruby>昵称<rt>MD ZZ</ruby></a>
 			<a href="https://github.com/NFWSA"><ruby>代码<rt>lan ai</ruby></a>
-			<a href="https://plus.google.com/104572676594669680889"><ruby>Google+<rt>luan yong</ruby></a>
-			<a href="http://pan.baidu.com/s/1dFhV2bZ"><ruby>游戏作品<rt>wa ken bu tian</ruby></a>
+			<a href="https://plus.google.com/104572676594669680889"><ruby>G+<rt>py jiaoyi</ruby></a>
+			<a href="http://pan.baidu.com/s/1dFhV2bZ"><ruby>作品<rt>wa ken</ruby></a>
 		</nav>
 	</header>
 
@@ -29,31 +30,45 @@
 			　　如你所见，一个昵称是SurgeNight的家伙域名却是nfwsa，这是为什么呢？
 		</p>
 		<p>
-			　　在很久以前，一个帅气（中二）的初中小伙子，给自己起了一套叫“夜火翼侠/夜火复仇者”的名字，后者被翻译简写成了<ruby>N<rt>Night</rt>F<rt>Fire</rt>A<rt>Avenger</rt></ruby>，因为太短，所以很多时候没用上，而前者，被写成了<ruby>N<rt>Night</rt>F<rt>Fire</rt>W<rt>Wing</rt>SA<rt>Swordman</ruby>（(つд⊂)别问我为啥这么翻译，宝宝英语差）。
+			　　在很久以前，一个帅气（中二）的小伙子，给自己起了一套叫“夜火翼侠/夜火复仇者”的名字，后者被翻译简写成了<ruby>N<rt>Night</rt>F<rt>Fire</rt>A<rt>Avenger</rt></ruby>，因为太短，所以很多时候没用上，而前者，被写成了<ruby>N<rt>Night</rt>F<rt>Fire</rt>W<rt>Wing</rt>SA<rt>Swordman</ruby>（(つд⊂)别问我为啥这么翻译，宝宝英语差）。
 		</p>
 		<p>
 			　　在很长一段时间里，NFWSA就是他的正式昵称，而导致的问题是：没人懂啥意思&amp;&amp;没人记得住（而且字数太少好多地方注册不得不变成NF_WSA等等导致名字用起来很混乱）。
 		</p>
 		<p>
-			　　这个悲剧的事实导致他不得不换一个更舒服的昵称，于是，SurgeNight就这样出现了 ﾟ∀ﾟ)σ。
+			　　这个悲剧的事实导致他不得不换一个更舒服的昵称，于是，SurgeNight就这样出现了 ﾟ∀ﾟ)σ。以后我会坚定不移把这个昵称用下去，然后让自己不用纠结在名字转换导致的阵痛中...(>д<)
 		</p>
 		<p>
-			　　在此我决定，我要坚定不移的好好把这个昵称推开，然后让自己不用在纠结在名字转换所导致的镇痛中...(>д<)
+			　　BTW，谢谢你来听我吐槽关于我名字的故事～(〃∀〃)
 		</p>
-		<p>
-			　　btw，谢谢你来听我吐槽关于我名字的故事～(〃∀〃)
-		</p>
-		<button id="nameArtBack">返回</button>
+		<button id="nameArtBack">X</button>
 	</article>
 
 	<footer>
-		<blockquote id="quote">WIP</blockquote>
 		<img src="taichi.png" id="taichi" />
+		<blockquote id="quote">太极可以点击哦~</blockquote>
 	</footer>
 
-	<canvas width="1024" height="768" id="bgsvg">
+	<canvas width="768" height="1024" id="bgsvg">
 	</canvas>
 
+	<script type="text/javascript">
+	window.addEventListener("load", function(){
+		document.getElementById("quote").setAttribute("class", "hide");
+		var taichi = document.getElementById("taichi");
+		taichi.setAttribute("class", "rotate");
+		taichi.addEventListener("transitionend", function(){
+			document.body.setAttribute("class", "loaded");
+		});
+	});
+	document.getElementById("nameBtn").addEventListener("click", function(){
+		nameArt.style.display = "block";
+	});
+	document.getElementById("nameArtBack").addEventListener("click", function(){
+		nameArt.style.display = "none";
+	});
+	</script>
+	<script type="text/javascript" async src="js/index_js.js"></script>
 </body>
 
 </html>
