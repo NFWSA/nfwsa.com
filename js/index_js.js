@@ -28,7 +28,6 @@ function Star(x, y){
 	this.y = y;
 	this.vx = Math.random()*1 - 0.5;
 	this.vy = Math.random()*1;
-	this.radius = 5;
 	// var r = parseInt(Math.random()*46+208).toString(),
 	// 	g = parseInt(Math.random()*197+26).toString(),
 	// 	b = (parseInt(g) + parseInt(Math.random()*-10+20)).toString();
