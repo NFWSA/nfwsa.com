@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="cmn-hans">
+<html lang="zh-Hans">
 
 <head>
 	<meta charset="UTF-8">
@@ -13,19 +13,110 @@
 </head>
 
 <body>
-<nav id="sidebar" class="">
+<nav id="sidebar">
     <ul>
-        <a href="index.html"><li>首页</li></a>
-        <a href="#"><li>《巴拉拉历险记》</li></a>
-        <a href="#"><li>《Do or Die》</li></a>
-        <a href="#"><li>《恶魔猎手》</li></a>
+        <li><a href="index.html">首页</a></li>
+        <li><a href="#balalaAdv">- 巴拉拉历险记</a></li>
+        <li><a href="#doordie">- Do or Die</a></li>
+        <li><a href="#daemonHunter">- 恶魔猎手</a></li>
     </ul>
+	<a href="http://pan.baidu.com/s/1dFhV2bZ">直戳下载</a>
+	<footer>
+		WIP<br />
+		use Atom editor<br />
+		Written by SurgeNight
+	</footer>
+	<button id="sidecon">&lt;</button>
 </nav>
-<nav class="content">
-    <section class="panel" id="panel-1"></section>
-    <section class="panel" id="panel-2"></section>
-    <section class="panel" id="panel-3"></section>
+<nav id="cover">作品展览</nav>
+<nav id="content">
+    <article class="panel" id="panel-1">
+		<h2>《巴拉拉历险记》</h2>
+		<h3>基本说明</h3>
+		<ol>
+			<li>开始的欢迎界面（展示游戏名与制作团队），点击即可跳过。</li>
+			<li>选择关卡界面，每个小精灵代表一个关卡。</li>
+			<li>当游戏人物抵达地图终点的触发区域时，即可进入下一关卡。</li>
+			<li>本游戏没有即死区域，进入不可离开地域后，请按`Esc`进行返回主页重新开始。</li>
+		</ol>
+		<ul>
+			<li><kbd>w</kbd>,<kbd>s</kbd>,<kbd>a</kbd>,<kbd>d</kbd>：人物移动。</li>
+			<li><kbd>Space</kbd>：跳跃。</li>
+			<li><kbd>鼠标左键</kbd>：使用技能。</li>
+			<li><kbd>1</kbd>：使用人物 游乐王子（远程射击，抛物线弹道，射速高，单发伤害低，不可穿透）。</li>
+			<li><kbd>2</kbd>：使用人物 魔仙小蓝（恢复法术，己方与敌方均可受益）。</li>
+			<li><kbd>3</kbd>：使用人物 黑魔仙（攻击法术，支线弹道，射速低，单发伤害高，可穿透）。</li>
+			<li><kbd>Ctrl</kbd>：使用特殊道具。</li>
+		</ul>
+		<h3>过关触发区域</h3>
+		<ol>
+			<li>第一关区域：地图最右。</li>
+			<li>第二关区域：地图最右。</li>
+			<li>第三关区域：地图最右下层。</li>
+			<li>第四关区域：地图最右上层。</li>
+			<li>第五关区域：地图最右最上层。</li>
+		</ol>
+		<h3>怪物行动模式</h3>
+		<ul>
+			<li><strong>近战怪物</strong>：伤害最高，当角色在视野内时向游戏角色移动，接触造成伤害，当角色位置高于怪物时会跳跃。</li>
+			<li><strong>远程怪物</strong>：伤害较低（使用二号角色治疗可以完全撑住），当角色在视野内时远离游戏角色，射击的子弹接触角色造成伤害，接触怪物无伤害。</li>
+			<li><strong>飞行近战怪物</strong>：不会跳跃，不攻击时飞行在天上，移动速度慢，其它与<strong>近战怪物</strong>相同。</li>
+			<li><strong>飞行远程怪物</strong>：不会跳跃，飞行在天上，移动速度慢，其它与<strong>远程怪物</strong>相同。</li>
+		</ul>
+		<h3>隐藏道具效果</h3>
+		<ul>
+			<li>该游戏有隐藏剧情，治疗每关的残血特殊怪物，即可触发剧情，获得<strong>隐藏道具</strong></li>
+			<li><strong>隐藏道具</strong>每关只能使用一次，在<strong>普通场景</strong>与<strong>Boss场景</strong>使用效果不同</li>
+		</ul>
+		<ol>
+			<li>第一关普通场景：全图敌人受到伤害，全部死亡</li>
+			<li>第一关Boss场景：Boss受到伤害，剩余一丝血量（1号人物一枪可终结）</li>
+			<li>第二关普通场景：所有敌人对你无法造成伤害</li>
+			<li>第二关Boss场景：Boss停止行动，固定于所站位置</li>
+			<li>第三关普通场景：切换本场景与下一场景BGM，怪物对你无伤害，下个场景Boss对你无伤害</li>
+			<li>第三关Boss场景：切换本场景BGM，Boss伤害大幅减少</li>
+			<li>第四关普通场景：所有敌人暂停行动，但接触近战怪物任会受到伤害</li>
+			<li>第四关Boss场景：Boss失去攻击能力</li>
+			<li>第五关普通场景：无特殊剧情</li>
+		</ol>
+	</article>
+    <article class="panel" id="panel-2">
+		<h2>《Do or Die》</h2>
+		<h3>基本说明</h3>
+		<p>开始的欢迎界面（展示游戏名与制作团队），点击即可跳过。</p>
+		<ol>
+		<li>一号主角特色：均衡。</li>
+		<li>二号主角特色：制作食品时，消耗材料减半。</li>
+		<li>三号主角特色：外出探索时，获得道具数量翻倍。</li>
+		</ol>
+		<p>探索场景中有<strong>可拾取道具</strong>、<strong>障碍物</strong>（角色与怪物无法穿越）、<strong>陷阱</strong>（角色与怪物经过会受到伤害）三种物体。</p>
+		<ul>
+			<li>该游戏剧情一共三十五天，生存三十四天后继续游戏即触发通关剧情。</li>
+			<li>探索场景中，怪物与角色一样会收到场景陷阱伤害。</li>
+			<li>行动越慢的怪物，接触后对玩家造成伤害越高。</li>
+			<li>一号主角死亡即视为游戏失败。</li>
+			<li>探索场景中死亡，会结束探索并扣除生存界面中的该角色血量，不会导致该角色直接死亡。</li>
+		</ul>
+	</article>
+    <article class="panel" id="panel-3">
+		<h2>《恶魔猎手》</h2>
+		<h3>WIP</h3>
+	</article>
 </nav>
+<script type="text/javascript" src="js/works.js"></script>
+<script type="text/javascript">
+	var panel = [];
+    for(var i=0; i<3; ++i)
+		panel.push(document.getElementById("panel-" + (i+1).toString()));
+	panel[0].style.left = '0';
+	panel[1].style.left = '100%';
+	panel[2].style.left = '200%';
+	content.style.width = (100-sidebar.clientWidth/document.documentElement.clientWidth*100).toString() + '%';
+	switchPage(null);
+	window.addEventListener("load", function(){
+		document.body.setAttribute("class", "loaded");
+		cover.addEventListener("transitionend", function(e){if(e.propertyName=='left')cover.remove();});
+	});
+</script>
 </body>
-
 </html>

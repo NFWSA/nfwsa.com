@@ -100,8 +100,7 @@ window.requestAnimationFrame(draw);
 
 function clear()
 {
-	ctx.fillStyle = 'rgba(128, 203, 255, 1)';
-	ctx.fillRect(0, 0, can.width, can.height);
+	ctx.clearRect(0, 0, can.width, can.height);
 }
 
 cnt = 0;
