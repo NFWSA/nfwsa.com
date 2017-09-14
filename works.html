@@ -105,21 +105,21 @@
 </nav>
 <script type="text/javascript" src="js/works.js"></script>
 <script type="text/javascript">
-(function() {
-	var content = document.getElementById('content');
-	var panel = [];
-	for(var i=0; i<3; ++i)
-		panel.push(document.getElementById("panel-" + (i+1).toString()));
-	panel[0].style.left = '0';
-	panel[1].style.left = '100%';
-	panel[2].style.left = '200%';
-	content.style.width = (100-sidebar.clientWidth/document.documentElement.clientWidth*100).toString() + '%';
-	switchPage(null);
-	window.addEventListener("load", function(){
-		document.body.setAttribute("class", "loaded");
-		cover.addEventListener("transitionend", function(e){if(e.propertyName=='left')cover.remove();});
-	});
-})();
+	(function() {
+		var content = document.getElementById('content');
+		var panel = [];
+		for(var i=0; i<3; ++i)
+			panel.push(document.getElementById("panel-" + (i+1).toString()));
+		panel[0].style.left = '0';
+		panel[1].style.left = '100%';
+		panel[2].style.left = '200%';
+		content.style.width = (100-sidebar.clientWidth/document.documentElement.clientWidth*100).toString() + '%';
+		switchPage(null);
+		window.addEventListener("load", function(){
+			document.body.setAttribute("class", "loaded");
+			cover.addEventListener("transitionend", function(e){if(e.propertyName=='left')cover.remove();});
+		});
+	})();
 </script>
 </body>
 </html>
