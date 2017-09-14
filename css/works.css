@@ -70,9 +70,10 @@ a:link,a:visited {
     height: 6vh;
 }
 #sidebar>ul>li>a {
+    display: block;
+    height: 100%;
     padding-left: 1vw;
     padding-right: 1vw;
-    width: 100%;
 }
 #sidebar>ul>li:hover {
     height: 7vh;
