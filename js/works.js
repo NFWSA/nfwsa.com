@@ -18,7 +18,7 @@ function sideout()
 
 function switchPage(e)
 {
-    var beg = 0, str = e==null ? window.location.hash : e.srcElement.hash;
+    var beg = 0, str = e==null ? window.location.hash : e.target.hash;
     switch(str){
         case '#balalaAdv':
             beg = 0;
