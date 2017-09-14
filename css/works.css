@@ -70,9 +70,10 @@ a:link,a:visited {
     height: 6vh;
 }
 #sidebar>ul>li>a {
+    display: block;
+    height: 100%;
     padding-left: 1vw;
     padding-right: 1vw;
-    width: 100%;
 }
 #sidebar>ul>li:hover {
     height: 7vh;
@@ -92,6 +93,16 @@ a:link,a:visited {
 #sidebar>a:hover {
     transform-origin: left;
     transform: rotateZ(-15deg);
+}
+#sidebar>a:hover::before {
+    /* 2017/09/14 see commit */
+    content: "";
+    position: absolute;
+    width: 20vw;
+    height: 10vh;
+    display: block;
+    transform: rotateZ(15deg);
+    transform-origin: left;
 }
 #sidebar>footer {
     position: absolute;
