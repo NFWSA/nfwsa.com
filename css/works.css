@@ -93,6 +93,16 @@ a:link,a:visited {
     transform-origin: left;
     transform: rotateZ(-15deg);
 }
+#sidebar>a:hover::before {
+    /* 2017/09/14 see commit */
+    content: "";
+    position: absolute;
+    width: 20vw;
+    height: 10vh;
+    display: block;
+    transform: rotateZ(15deg);
+    transform-origin: left;
+}
 #sidebar>footer {
     position: absolute;
     bottom: 1vh;
